@@ -1,0 +1,267 @@
+
+$SUI: 'SegoeUIRegular';
+$SUIB: 'SegoeUI-Bold';
+$SUIL: 'SegoeUI-Light';
+$SUISB: 'SegoeUI-Semibold';
+$OSSB: 'OpenSans-Semibold';
+$OS: 'OpenSans';
+$OSB: 'OpenSans-Bold';
+$U: 'Ubuntu';
+$UL : 'Ubuntu-Light';
+$UB : 'Ubuntu-Bold';
+$FL : 'FuturaPT-Light';
+$FBO : 'Futura PT Book';
+$FM : 'FuturaPT-Medium';
+$FB : 'FuturaPT-Bold';
+$grey: #505050;
+$green: #1ad199;
+
+* { 
+	box-sizing: border-box;
+}      
+   
+html,body {     
+	width: 100%;   
+	height: 100%;
+	font-size: 16px; 
+}
+
+.error {
+	transition: all .8s;
+	border:1px solid red !important;
+	box-shadow: inset 0px 0px 15px 0px  red !important;
+}
+
+.right {
+	transition: all .8s;
+	border:1px solid green !important;
+	box-shadow: inset 0px 0px 15px 0px  green !important;
+}
+
+.main {
+	padding: 0 20px;
+	&__logo {
+		margin: 50px auto;
+		max-width: 194px;
+		img {
+			width: 100%;
+		}
+	}
+	&__text {
+		margin: 30px auto;
+		margin-top: 100px;
+		max-width: 870px;
+		text-align: center;
+		span {
+			display: block;
+			margin-top: 40px;
+			font-family: $FBO;
+			font-size: 1.5em;
+			color: $grey;
+			&:nth-child(1) {
+				font-family: $FB;
+				font-size: 1.875em;
+				color: #4db051;
+				display: block;
+			}
+		}
+	}
+	&__title {
+		background-color: #ffe400;
+		color: $grey;
+		font-family: $FB;
+		font-size: 4.375em;
+		max-width: 240px;
+		margin: 30px auto;
+		text-align: center;
+	}
+	.form {
+		margin: 40px auto;
+		max-width: 1030px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__wrap {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		&__text {
+			text-align: center;
+			text-transform: uppercase;
+			color: $grey;
+			font-family: $U;
+			font-size: 2em;
+		}
+		input, select {
+			background-color: #ddd;
+			border: 4px solid #ccc;
+			max-width: 100%;
+			outline: none;
+			margin: 30px 20px;
+			padding: 25px 35px;
+			font-family: $FL;
+			font-size: 1.5em;
+			color: $grey;
+			border: none;
+			border-radius: 40px;
+			box-shadow: inset 6px 0px 10px 0px #d0d0d0;
+		}
+		select {
+			max-width: 480px;
+			width: 100%;
+		}
+		.select__wrap {
+			min-width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.button {
+			background-color: #ffcc00;
+			color: #fff;
+			padding: 30px 55px;
+			border-radius: 40px;
+			border: none;
+			font-family: $FBO;
+			font-size: 1.4em;
+			transition: all .6s;
+			cursor: pointer;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-family: $FBO;
+		font-size: 1.5em;
+		color: $grey;
+		span {
+			margin-top: 3px;
+		}
+		a {
+			color: $grey;
+			text-decoration: none;
+		}
+	}
+	&__list {
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;	
+		justify-content: space-between;
+		max-width: 1000px;
+		margin: 30px auto;
+	}
+	&__item {
+		color: $grey;
+		padding-top: 230px;
+		background-image: url('../img/main_i1.png');
+		background-repeat: no-repeat;
+		background-position: center 0;
+		text-align: center;
+		max-width: 350px;
+		&:nth-child(2) {
+			background-image: url('../img/main_i2.png');
+		}
+		&__title {
+			font-family: $FB;
+			font-size: 1.6em;
+			margin-bottom: 30px;
+		}
+		&__text {
+			font-family: $FBO;
+			font-size: 1.5em;
+		}
+	}
+
+}
+
+.footer {
+	&__wrapper {
+		max-width: 1920px;
+		margin: auto;
+		padding: 30px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	} 
+	&__logo__wrap {
+		max-width: 450px;
+		font-size: 1.125em;
+		font-family: $SUI;
+		color: #555;
+		img {
+			width: 100%;
+		}
+	}
+	&__privacy, .dogovor-oferty {
+		display: block;
+		margin-top: 7px;
+		font-family: $SUI;
+		color: #555;
+	}
+	&__contacts {
+		font-family: $SUI;
+		color: #555;
+		max-width: 220px;
+		text-align: center;
+	}
+	&__email {
+		margin-top: 10px;
+	}
+	&__socials {
+		margin-top: 15px;
+		.facebook {
+			background-image: url('../img/facebook.png');
+			width: 60px;
+			height: 60px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 5px;
+		}
+		.instagram {
+			background-image: url('../img/instagram.png');
+			width: 60px;
+			height: 60px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 5px;
+		}
+		.youtube {
+			background-image: url('../img/youtube.png');
+			width: 60px;
+			height: 60px;
+			background-position: center;
+			display: inline-block;
+			margin: 5px;			
+		}
+	}
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    outline: 0;
+    text-align: justify;
+    background-color: #eee;
+    max-width: 1000px;
+    margin: auto;
+    font-family: SegoeUI-Semibold;
+    padding: 20px;
+    overflow: scroll;
+    font-size: 1.5em;
+}
+
+
+@import "media"; 
