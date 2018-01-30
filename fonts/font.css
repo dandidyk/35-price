@@ -120,7 +120,7 @@
 
 @font-face {
     font-family: 'Ubuntu-Light';
-    src: url('Ubuntu-Light.woff') format('woff')
+    src: url('Ubuntu-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
